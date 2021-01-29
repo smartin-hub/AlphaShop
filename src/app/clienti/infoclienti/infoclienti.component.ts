@@ -12,10 +12,13 @@ export class InfoclientiComponent implements OnInit {
   @Input() Bollini: number = 0;
   @Input() Attivo: boolean = true;
 
+  Differenza: number = 0;
+
   @Output() Verifica = new EventEmitter<string>();
   constructor() { }
 
   ngOnInit(): void {
+    this.Differenza = this.Bollini - 1000;
   }
 
 }

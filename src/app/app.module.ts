@@ -19,6 +19,7 @@ import { AuthInterceptService } from './services/http/auth-intercept.service';
 import { ForbiddenComponent } from './forbidden/forbidden.component';
 import { ClientiComponent } from './clienti/clienti.component';
 import { InfoclientiComponent } from './clienti/infoclienti/infoclienti.component';
+import { CopyrightDirective } from './directives/copyright.directive';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { InfoclientiComponent } from './clienti/infoclienti/infoclienti.componen
     NewartComponent,
     ForbiddenComponent,
     ClientiComponent,
-    InfoclientiComponent
+    InfoclientiComponent,
+    CopyrightDirective
   ],
   imports: [
     BrowserModule,
