@@ -42,7 +42,7 @@ export class ClientiComponent implements OnInit {
   {
     console.log(idFid);
 
-    /*this.testCli = this.clienti.find(x => x.idFid == idFid);
+    this.testCli = this.clienti.find(x => x.idFid == idFid);
 
     if (this.testCli?.attivo)
     {
@@ -54,6 +54,6 @@ export class ClientiComponent implements OnInit {
     else
     {
       window.alert(`Il cliente ${this.testCli?.nome} non è attivo!`);
-    }*/
+    }
   }
 }
