@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-infoclienti',
@@ -12,6 +12,7 @@ export class InfoclientiComponent implements OnInit {
   @Input() Bollini: number = 0;
   @Input() Attivo: boolean = true;
 
+  @Output() Verifica = new EventEmitter<string>();
   constructor() { }
 
   ngOnInit(): void {

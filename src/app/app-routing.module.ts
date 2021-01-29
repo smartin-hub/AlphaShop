@@ -9,6 +9,7 @@ import { RouteGuardService } from './services/route-guard.service';
 import { NewartComponent } from './newart/newart.component';
 import { Ruoli } from 'src/models/Ruoli';
 import { ForbiddenComponent } from './forbidden/forbidden.component';
+import { ClientiComponent } from './clienti/clienti.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path:'newart/:codart', component : NewartComponent, canActivate:[RouteGuardService], data: {roles: [Ruoli.amministratore]}},
   {path:'logout', component : LogoutComponent},
   {path:'forbidden', component : ForbiddenComponent},
+  {path:'clienti', component : ClientiComponent},
   {path:'**', component : ErrorComponent}
 ];
 
