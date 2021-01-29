@@ -17,6 +17,8 @@ import { LogoutComponent } from './logout/logout.component';
 import { NewartComponent } from './newart/newart.component';
 import { AuthInterceptService } from './services/http/auth-intercept.service';
 import { ForbiddenComponent } from './forbidden/forbidden.component';
+import { ClientiComponent } from './clienti/clienti.component';
+import { InfoclientiComponent } from './clienti/infoclienti/infoclienti.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { ForbiddenComponent } from './forbidden/forbidden.component';
     JumbotronComponent,
     LogoutComponent,
     NewartComponent,
-    ForbiddenComponent
+    ForbiddenComponent,
+    ClientiComponent,
+    InfoclientiComponent
   ],
   imports: [
     BrowserModule,
