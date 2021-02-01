@@ -432,3 +432,10 @@ label {
 		text-align: center !important;
 	}
 }
+
+.copyright {
+	color: rgb(216, 27, 27);
+	padding: 10px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	size: small;
+}
