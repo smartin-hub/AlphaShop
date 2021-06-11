@@ -12,7 +12,7 @@ import { ArticoliDataService } from '../services/data/articoli-data.service';
 export class NewartComponent implements OnInit {
 
   CodArt: string = '';
-  articolo: Articoli;
+  articolo: Articoli = new Articoli("-1","","","",0,0,0,"1",new Date(), 1, 22, "");
   Conferma: string = '';
   Errore: string = '';
   IsModifica: boolean = false;
@@ -29,7 +29,7 @@ export class NewartComponent implements OnInit {
   ngOnInit() {
 
     //Inizializziamo l'articolo
-    this.articolo = new Articoli("-1","","","",0,0,0,"1",new Date(), 1, 22, "");
+    //this.articolo = new Articoli("-1","","","",0,0,0,"1",new Date(), 1, 22, "");
 
     this.CodArt = this.route.snapshot.params['codart'];
 
